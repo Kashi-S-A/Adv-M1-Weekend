@@ -1,0 +1,11 @@
+package com.tyss;
+
+public class Insert {
+
+	public static void main(String[] args) {
+		String url = "jdbc:postgresql://localhost:5432/studentdb";
+		String username = "postgres";
+		String password = "root";
+		String driver = "org.postgresql.Driver";
+	}
+}

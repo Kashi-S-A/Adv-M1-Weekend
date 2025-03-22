@@ -1,0 +1,19 @@
+package com.tyss;
+
+public class Insert {
+
+	public static void main(String[] args) {
+		String url = "jdbc:postgresql://localhost:5432/studentdb";
+		String username = "postgres";
+		String password = "root";
+		String driver = "org.postgresql.Driver";
+		
+		try {
+			//step 1 : Load the driver
+			Class.forName(driver);
+			System.out.println("driver is loaded");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}
