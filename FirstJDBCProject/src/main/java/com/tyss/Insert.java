@@ -26,10 +26,13 @@ public class Insert {
 			Statement stm = con.createStatement();
 			System.out.println("Statement is created");
 			
-			String query="INSERT INTO student VALUES(102,'Ramesh',345678,'Airoli')";
+			String query="INSERT INTO student VALUES(104,'Sheela',4567654,'Bandra')";
 			
 			//step 4 : Execute the query
-			stm.execute(query);
+			boolean result = stm.execute(query);
+			
+			System.out.println(result);
+			
 			System.out.println("query executed");
 			
 			//step 5 : Close the connection
