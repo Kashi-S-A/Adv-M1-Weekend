@@ -1,0 +1,7 @@
+package com.ty;
+
+import javax.servlet.GenericServlet;
+
+public class PageA extends GenericServlet{
+
+}
